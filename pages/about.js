@@ -16,7 +16,6 @@ const styles = theme => ({
 
 function About(props) {
   const { classes } = props;
-
   return (
     <div className={classes.root}>
       <Typography variant="display1" gutterBottom>

@@ -3,6 +3,7 @@ import { withStyles, Grid, Paper, Typography, Button, Card, CardMedia, CardConte
 import Action from '../component/pages/bid-page/BidAction';
 import Product from '../component/pages/bid-page/Product';
 import Bidder from '../component/pages/bid-page/Bidder';
+import AppLayout from '../component/AppLayout';
 
 const styles = theme => ({
     card: {
@@ -45,6 +46,7 @@ class BidPage extends React.Component {
         const { classes, theme } = this.props
         return (
             <div>
+                <AppLayout>
                 <Grid container direction="row" spacing={16}>
                     <Grid item xs={4}>
                         <Bidder/>
@@ -55,6 +57,7 @@ class BidPage extends React.Component {
                     </Grid>
 
                 </Grid>
+                </AppLayout>
             </div>)
     }
 }

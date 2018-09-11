@@ -1,5 +1,6 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core';
+import AppLayout from '../component/AppLayout';
 
 const styles = theme =>{
 
@@ -7,7 +8,7 @@ const styles = theme =>{
 
 class SettingPage extends React.Component{
     render(){
-        return (<div>This is setting page</div>)
+        return (<AppLayout>This is setting page</AppLayout>)
     }
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core';
+import AppLayout from '../component/AppLayout';
 
 const styles = theme =>{
     
@@ -7,9 +8,9 @@ const styles = theme =>{
 class BiddingPage extends React.Component{
     render(){
         return (
-            <div>
+            <AppLayout>
                 This is bidding page
-            </div>
+            </AppLayout>
         )
     }
 }

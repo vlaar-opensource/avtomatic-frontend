@@ -13,6 +13,7 @@ import Pricing from '../component/pages/product-entry/Pricing'
 import Timing from '../component/pages/product-entry/Timing'
 import Summary from '../component/pages/product-entry/Summary';
 import Router from 'next/router'
+import AppLayout from '../component/AppLayout';
 
 
 const styles = theme => ({
@@ -107,7 +108,7 @@ class CreateBid extends React.Component {
 
 
         return (
-            <div>
+                <AppLayout>
                 <Stepper activeStep={activeStep}>
                     {steps.map((label, idx) => {
                         const props = {}
@@ -135,8 +136,7 @@ class CreateBid extends React.Component {
                         onClick={this.handleNext}
                     >{activeStep === steps.length - 1 ? 'Finish' : 'Next'}</Button>
                 </div>
-
-            </div>
+                </AppLayout>
         )
     }
 }

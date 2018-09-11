@@ -41,9 +41,9 @@ class MyApp extends App {
             <CssBaseline />
             {/* Pass pageContext to the _document though the renderPage enhancer
                 to render collected styles on server side. */}
-            <AppLayout>
+            
             <Component pageContext={this.pageContext} {...pageProps} />
-            </AppLayout>
+            
           </MuiThemeProvider>
         </JssProvider>
       </Container>

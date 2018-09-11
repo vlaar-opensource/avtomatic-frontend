@@ -2,6 +2,7 @@ import React from 'react'
 import Router from 'next/router'
 import { withStyles, Paper, Card, CardContent, Typography, Grid, CardActions, Button } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/AddOutlined'
+import AppLayout from '../component/AppLayout';
 
 const styles = (theme) => ({
     card: {
@@ -19,7 +20,7 @@ class ListingPage extends React.Component {
     render() {
         const { classes } = this.props
 
-        return (<div>
+        return (<AppLayout>
             <Grid container direction="column">
                 <Grid>
                 {this.props.listings.map((listing) => {
@@ -48,7 +49,7 @@ class ListingPage extends React.Component {
                 </Grid>
 
             </Grid>
-        </div>)
+        </AppLayout>)
     }
 }
 
