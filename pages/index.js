@@ -48,8 +48,6 @@ class Index extends React.Component {
           <Link href="/bid-page">
             <Typography >Hello</Typography>
           </Link>
-          
-          
         </Paper>
       </div>
     );

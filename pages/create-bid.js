@@ -42,7 +42,7 @@ class CreateBid extends React.Component {
     }
 
     saveBid(){
-        Router.push('/')   
+        Router.push('/listing')   
     }
 
     handleNext = () => {

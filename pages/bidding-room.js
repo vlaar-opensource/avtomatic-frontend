@@ -47,7 +47,6 @@ class BidPage extends React.Component {
             <div>
                 <Grid container direction="row" spacing={16}>
                     <Grid item xs={4}>
-
                         <Bidder/>
                     </Grid>
                     <Grid item xs={8}>
